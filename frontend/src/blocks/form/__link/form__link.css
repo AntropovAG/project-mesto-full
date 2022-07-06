@@ -1,0 +1,9 @@
+.form__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.form__link:hover {
+  opacity: .6;
+  transition: opacity .3s;
+}

@@ -1,0 +1,6 @@
+.element__like-group {
+  max-width: 22px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0 0;
+}

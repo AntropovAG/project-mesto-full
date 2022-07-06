@@ -1,0 +1,7 @@
+.element {
+  max-width: 282px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

@@ -1,0 +1,17 @@
+.form__label {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding: 0 0 54px;
+  margin: 0;
+}
+
+@media screen and (max-width: 520px) {
+  .form__label {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 25px 0 75px;
+  }
+}

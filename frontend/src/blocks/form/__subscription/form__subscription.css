@@ -1,0 +1,16 @@
+.form__subscription {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFF;
+  text-align: center;
+  margin: 15px 0 0;
+}
+
+@media screen and (max-width: 520px) {
+  .form__subscription {
+    margin-top: 20px;
+  }
+}

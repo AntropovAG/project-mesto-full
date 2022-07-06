@@ -1,0 +1,14 @@
+.form {
+  width: 358px;
+  display: flex;
+  flex-direction: column;
+  padding: 34px 36px 0;
+  margin: auto;
+}
+
+@media screen and (max-width: 520px) {
+  .form{
+    width: 238px;
+    padding: 0 22px 0;
+  }
+}

@@ -1,0 +1,9 @@
+.form__label_type_delete {
+  padding: 0 0 25px;
+}
+
+@media screen and (max-width: 520px) {
+  .form__label_type_delete {
+    padding: 25px 0 25px;
+  }
+}

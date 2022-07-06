@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 880px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  border-bottom: 1px solid rgba(84,84,84, .7);
+  box-sizing: border-box;
+}
+

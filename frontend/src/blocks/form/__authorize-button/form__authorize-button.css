@@ -1,0 +1,30 @@
+.form__authorize-button {
+  height: 50px;
+  font-family: 'Inter', 'Arial Narrow Bold', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000;
+  background-color: #FFF;
+  border-radius: 2px;
+  border-color: #FFF;
+  margin: 181px 0 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.form__authorize-button:hover {
+  opacity: .85;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .form__authorize-button {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 138px 0 0;
+  }
+}

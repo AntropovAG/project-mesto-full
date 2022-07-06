@@ -1,0 +1,21 @@
+.profile__photo-button {
+  width: 120px;
+  height: 120px;
+  background-image: url('../../../images/photo_edit.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, .8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 0;
+  opacity: 0;
+  box-sizing: border-box;
+  padding: 0;
+  cursor: pointer;
+}
+
+.profile__photo-button:hover {
+  opacity: 1;
+  transition: opacity .3s;
+}
