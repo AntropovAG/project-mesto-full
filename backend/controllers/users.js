@@ -8,8 +8,8 @@ const {
 } = require('../errors/errors');
 
 const { NODE_ENV, JWT_SECRET } = process.env;
-const YOUR_JWT = ''; // вставьте сюда JWT, который вернул публичный сервер студента
-const SECRET_KEY_DEV = ''; // вставьте сюда секретный ключ для разработки из кода студента
+const YOUR_JWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmM2YjA3MmU0NmE3YWYzOGI0ODE3MjciLCJpYXQiOjE2NTcxODg0NzYsImV4cCI6MTY1Nzc5MzI3Nn0.pb1VbpyiKVSrrI5BIrBzr8WOXfliP_1u2FvwEW4VMEc';
+const SECRET_KEY_DEV = 'some-secret-key';
 const DuplicateEmailError = require('../errors/DuplicateEmailError');
 const NotFoundError = require('../errors/NotFoundError');
 const WrongDataError = require('../errors/WrongDataError');
@@ -116,7 +116,9 @@ module.exports.userLogin = (req, res, next) => {
         return next(new WrongEmailOrPasswordError('Неправильный e-mail или пароль'));
       }
       const token = jwt.sign({ _id: user.id }, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret', { expiresIn: '7d' });
-      res.cookie('jwt', token, { maxAge: 7 * 24 * 60 * 60 * 1000, httpOnly: true });
+      res.cookie('jwt', token, {
+        maxAge: 7 * 24 * 60 * 60 * 1000, httpOnly: true, sameSite: 'none', secure: true,
+      });
       return res.send({ token });
     })
     .catch((error) => {
