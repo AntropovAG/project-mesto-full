@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:3001";
+const baseURL = "https://api.projectmesto.antropov.nomorepartiesxyz.ru";
 const checkResponse = (res) => {return res.ok ? res.json() : Promise.reject(`Ошибка ${res.status}`)}
 
 export function register(userEmail, password) {

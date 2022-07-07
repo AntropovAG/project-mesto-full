@@ -16,6 +16,7 @@ const corsOptions = {
     'http://localhost:3000',
     'http://localhost:3001',
     'https://projectmesto.antropovag.nomoredomains.sbs',
+    'http://projectmesto.antropovag.nomoredomains.sbs',
     'https://antropovag.github.io',
   ],
   credentials: true,

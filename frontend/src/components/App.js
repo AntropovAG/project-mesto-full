@@ -169,7 +169,6 @@ function App() {
 
   useEffect(()=>{
     checkToken();
-    console.log('Типа токен чтоли?')
   }, [])
 
   useEffect(() => {
@@ -201,7 +200,6 @@ function App() {
       })
         .catch(err => console.log(err))
     };
-    console.log('запросы всего и вся?')
   }, [isLoggedIn])
 
   return (
