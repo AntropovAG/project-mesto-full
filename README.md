@@ -11,5 +11,3 @@ Project provides the user with such features as registration and authentication 
 - used Yandex VM for deployment and hosting of the Project on a server.
 Project uses an APIs to communicate with a servers (third-party server and Project backend). Used BEM and OOP methodologies when creating a Project. Project is built using semantic tags for easier accessibility.
 
-Project is available at the following address:
-https://projectmesto.antropovag.nomoredomains.sbs
